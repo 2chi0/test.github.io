@@ -1,0 +1,31 @@
+<div class="item photography card-deck">
+    <div class="card h-100">
+        {{ $page := . }}
+        {{ with $page.Resources.GetMatch "cover.png" }}
+        <a href="{{ $page.RelPermalink }}" class="item-wrap fancybox d-block" style="text-decoration:none">
+            <div class="work-info">
+                <h3>L E C T U R E</h3>
+                <span>detail</span>
+            </div>
+            <img src="{{ $page.RelPermalink }}{{ $page.Resources.GetMatch "cover.png" }}" class="card-img-top mx-auto d-block">
+        </a>
+        {{ end }}
+        <a href="{{ $page.RelPermalink }}" class="d-block" style="text-decoration:none">
+            <div class="card-body">
+                <h4 class="card-title">{{ $page.Title }}</h4>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><span class="badge badge-pill badge-primary"><i
+                            class="fas fa-won-sign"></i><strong>{{ .Params.교육비 }}</strong></span></small>
+                <small class="text-muted"><span
+                        class="badge badge-pill badge-success"><strong>{{ .Params.시간 }}시간 /
+                            1개월</strong></span></small>
+                <small class="text-muted"><span
+                        class="badge badge-pill badge-danger"><strong>{{ .Params.난이도 }}</strong></span></small>
+                <small class="text-muted"><span
+                        class="badge badge-pill badge-info"><strong></strong>{{ .Params.내용전문가_이름_소속_ }}</span></small>
+            </div>
+        </a>
+
+    </div>
+</div>

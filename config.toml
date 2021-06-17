@@ -1,0 +1,23 @@
+baseURL = "https://2chi0.github.io/test.github.io/"
+languageCode = "ko"
+title = "HRDCenter"
+hasCJKLanguage = true
+
+[params]
+companyname = "(주)에이치알디한국중소기업교육원"
+bossname = "한종률"
+companyaddress = "서울특별시 성동구 상원12길 30(동진IT타워) 11층 1101호~1102호"
+companytel = "02-525-7107"
+companyfax = "02-512-8530"
+companynumber = "675-86-00074"
+imgURL = "test.github.io"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 0
